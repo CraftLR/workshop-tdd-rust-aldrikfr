@@ -279,7 +279,7 @@ Faites très attention pour cet exercice de bien respecter le principe du TDD en
 
 Comme pour l'exercice précédent, vous devez activer les tests les uns après les autres et soumettre votre solution après chaque itération du cycle principal du workflow.
 
-Après le troisième test, vous pouvez refactoriser en utilisant un switch. Ensuite, vous ajouterez les tests nécessaires pour les symboles L, C, D et M.
-A la fin de l'implémentation de tous les symboles de base, vous pouvez refactoriser le switch en utilisant l'IDE qui vous propose "Extract method", que vous nommerez correctement, l'idée est de toujours écrire un code facile à relire et qui exprime bien l'intention de l'auteur.
+Après le troisième test, vous pouvez refactoriser en utilisant un `match`. Ensuite, vous ajouterez les tests nécessaires pour les symboles L, C, D et M.
+A la fin de l'implémentation de tous les symboles de base, vous pouvez refactoriser le `match` en utilisant l'IDE qui vous propose "Extract method", que vous nommerez correctement, l'idée est de toujours écrire un code facile à relire et qui exprime bien l'intention de l'auteur.
 
 Une fois l'exercice terminé, n'oubliez pas de pousser les modifications de la branche `exercice3` sur votre fork. Créez votre PR, faite la relire par votre voisin et fusionner là dès qu'elle est parfaite. Une fois la fusion effectuée, n'oubliez pas de vous replacer sur la branche `main` et de tirer votre dépôt distant.
