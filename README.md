@@ -25,6 +25,41 @@ La première chose à faire est de créer un fork de ce dépôt. Pour ce faire, 
 
 GitHub va vous créer un dépôt contenant un fork de ce dépôt. Vous apparaîtrez automatiquement comme contributeur de ce projet pour y pousser votre travail.
 
+### Découverte du langage Rust
+
+Rust est un langage de programmation compilé multi-paradigme conçu et développé par Mozilla Research depuis 2010. Il a été conçu pour être « un langage fiable, concurrent, pratique », supportant les styles de programmation purement fonctionnel, modèle d'acteur, procédural, ainsi qu'orienté objet sous certains aspects.
+
+En 2020, ses domaines de prédilection sont la programmation système, les applications en ligne de commande, les applications Web via WebAssembly, les services réseaux et les systèmes embarqués.
+
+#### Jouer avec Rust
+
+Pour apprendre Rust, vous devez évidemment écrire et tester votre propre code Rust. Il existe deux manières simples de commencer :
+
+* [Le Playground Rust](https://play.rust-lang.org/?version=stable&mode=debug&edition=2021) : Contrairement aux développeurs JavaScript, presque tous les Rustaciens utilisent le même terrain de jeu en ligne pour tester leurs exemples. Outre les fonctionnalités essentielles que vous attendez, Rust Playground a également accès aux 100 meilleurs packages de Rust et à la prise en charge du linter Rust (`clippy`) et du formateur Rust (`rustfmt``).
+* Un éditeur de code comme VS Code. Dans VS Code, l' extension `rust-analyzer` est tout ce dont vous avez besoin pour utiliser cette intégration et écrire vos propres programmes Rust.
+
+Pour commencer à découvrir le langage, le Playground est une bonne option car il vous permet de tester vos programmes rapidement sans vous préoccuper de l'installation d'un outil sur votre poste.
+
+#### Parcours d'apprentissage Rust de Microsoft
+
+Site Web : <https://aka.ms/GetStartedWithRust>
+
+#### Cours complet sur Rust de Google
+
+Site Web : <https://google.github.io/comprehensive-rust/>
+
+#### Les livres de référence
+
+Rust Book : <https://doc.rust-lang.org/book/title-page.html>
+
+Rust By Example : <https://doc.rust-lang.org/rust-by-example/index.html>
+
+Rust Cookbook : <https://rust-lang-nursery.github.io/rust-cookbook/>
+
+#### L'aide mémoire
+
+Pour vous rappeler des concepts principaux du langage, vous pouvez utiliser le Rust Language Cheat Sheet : <https://cheats.rs/>
+
 ### Découverte et prise en main de l'IDE
 
 Pour faire l'atelier, il faut disposer d'un environnement Rust complet et de préférence à jour. L'installation des outils est assez simple tant que vous êtes sous Linux ou OSX. Sous Windows, il semble que ce soit moins évident donc il faudra probablement chercher un peu plus.
@@ -75,41 +110,6 @@ Pour disposer de Gitpod sur tous vos projets hébergés sur Github, suivez les �
 * Personnalisez le thème par défaut en ouvrant le panneau de commande (avec le raccourci clavier `Ctrl+Shift+P`) et en sélectionnant `Preferences: Color Theme`. Si vous préférez par exemple les couleur sombre pour reposer vos yeux, le thème *gitpod dark* devrait vous convenir. Vous pouvez rajouter de nouveaux thème directement en recherchant dans les extensions (avec le raccourci clavier `Ctrl+Shift+X`).
 
 Vous pouvez maintenant commencer à traiter les environnements de développement comme des ressources automatisées que vous lancez lorsque vous en avez besoin et fermez (et oubliez) lorsque vous avez terminé votre tâche. Les environnements de développement deviennent totalement éphémères. Attention avec l'offre Github éducation vous ne disposez que de 100h mensuels, donc il faut penser à fermer vos espaces de travail quand vous avez terminé de vous en servir (dans tous les cas ils seront fermés automatiquement après 30 minutes d'inactivité).
-
-### Découverte du langage Rust
-
-Rust est un langage de programmation compilé multi-paradigme conçu et développé par Mozilla Research depuis 2010. Il a été conçu pour être « un langage fiable, concurrent, pratique », supportant les styles de programmation purement fonctionnel, modèle d'acteur, procédural, ainsi qu'orienté objet sous certains aspects.
-
-En 2020, ses domaines de prédilection sont la programmation système, les applications en ligne de commande, les applications Web via WebAssembly, les services réseaux et les systèmes embarqués.
-
-#### Jouer avec Rust
-
-Pour apprendre Rust, vous devez évidemment écrire et tester votre propre code Rust. Il existe deux manières simples de commencer :
-
-* ![Le Playground Rust](https://play.rust-lang.org/?version=stable&mode=debug&edition=2021) : Contrairement aux développeurs JavaScript, presque tous les Rustaciens utilisent le même terrain de jeu en ligne pour tester leurs exemples. Outre les fonctionnalités essentielles que vous attendez, Rust Playground a également accès aux 100 meilleurs packages de Rust et à la prise en charge du linter Rust (`clippy`) et du formateur Rust (`rustfmt``).
-* Un éditeur de code comme VS Code. Dans VS Code, l' extension `rust-analyzer` est tout ce dont vous avez besoin pour utiliser cette intégration et écrire vos propres programmes Rust.
-
-Pour commencer à découvrir le langage, le Playground est une bonne option car il vous permet de tester vos programmes rapidement sans vous préoccuper de l'installation d'un outil sur votre poste.
-
-#### Parcours d'apprentissage Rust de Microsoft
-
-Site Web : <https://aka.ms/GetStartedWithRust>
-
-#### Cours complet sur Rust de Google
-
-Site Web : <https://google.github.io/comprehensive-rust/>
-
-#### Les livres de référence
-
-Rust Book : <https://doc.rust-lang.org/book/title-page.html>
-
-Rust By Example : <https://doc.rust-lang.org/rust-by-example/index.html>
-
-Rust Cookbook : https://rust-lang-nursery.github.io/rust-cookbook/
-
-#### L'aide mémoire
-
-Pour vous rappeler des concepts principaux du langage, vous pouvez utiliser le Rust Language Cheat Sheet : <https://cheats.rs/>
 
 ### Découverte du TDD : mode opératoire (Workflow)
 
