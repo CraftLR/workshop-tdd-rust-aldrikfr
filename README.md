@@ -35,7 +35,7 @@ En 2020, ses domaines de prédilection sont la programmation système, les appli
 
 Pour apprendre Rust, vous devez évidemment écrire et tester votre propre code Rust. Il existe deux manières simples de commencer :
 
-* [Le Playground Rust](https://play.rust-lang.org/?version=stable&mode=debug&edition=2021) : Contrairement aux développeurs JavaScript, presque tous les Rustaciens utilisent le même terrain de jeu en ligne pour tester leurs exemples. Outre les fonctionnalités essentielles que vous attendez, Rust Playground a également accès aux 100 meilleurs packages de Rust et à la prise en charge du linter Rust (`clippy`) et du formateur Rust (`rustfmt``).
+* [Le Playground Rust](https://play.rust-lang.org/?version=stable&mode=debug&edition=2021) : Contrairement aux développeurs JavaScript, presque tous les Rustaciens utilisent le même terrain de jeu en ligne pour tester leurs exemples. Outre les fonctionnalités essentielles que vous attendez, Rust Playground a également accès aux 100 meilleurs packages de Rust et à la prise en charge du linter Rust (`clippy`) et du formateur Rust (`rustfmt`).
 * Un éditeur de code comme VS Code. Dans VS Code, l' extension `rust-analyzer` est tout ce dont vous avez besoin pour écrire vos propres programmes Rust.
 
 Pour commencer à découvrir le langage, le Playground est une bonne option car il vous permet de tester vos programmes rapidement sans vous préoccuper de l'installation d'un outil sur votre poste. L'ensemble de ce workshop est réalisable sans installer d'outils sur votre poste.
@@ -315,7 +315,7 @@ Lorsque le joueur clique sur une case libre comportant au moins une mine dans l'
 
 Dans cet exercice, vous devez écrire le code qui compte le nombre de mines adjacentes à une case et transforme des tableaux comme celui-ci (où * indique une mine):
 
-```
+```text
 +-----+
 | * * |
 |  *  |
@@ -326,7 +326,7 @@ Dans cet exercice, vous devez écrire le code qui compte le nombre de mines adja
 
 En ceci :
 
-```
+```text
 +-----+
 |1*3*1|
 |13*31|
