@@ -11,11 +11,11 @@
 
 L'objectif premier de cet atelier est de vous familiariser avec tous les nouveaux outils qui sont nécessaires pour produire du beau code. Cet atelier est à la fois une découverte des tests unitaires et de leur mise en pratique. Chacun des exercices proposés ci-après peut donner lieu à un kata que serait pratiqué lors d'un coding dojo en mob-programming pour questionner ses pratiques et les différents choix que l'on pourrait faire.
 
-## Découverte de l'environnement de travail, des outils et premiers tests en Rust [![Rust CI with cargo](https://github.com/CraftLR/workshop-tdd-rust/actions/workflows/rust.yml/badge.svg)](https://github.com/CraftLR/workshop-tdd-rust/actions/workflows/rust.yml)
+## Découverte de Rust, des outils et premiers tests unitaires [![Rust CI with cargo](https://github.com/CraftLR/workshop-tdd-rust/actions/workflows/rust.yml/badge.svg)](https://github.com/CraftLR/workshop-tdd-rust/actions/workflows/rust.yml)
 
 ### Création de votre fork
 
-Vous connaissez déjà les bases de Git. Si ce n'est pas le cas, il vous faudra réaliser l'atelier [Git](https://github.com/CraftLR/workshop-git).
+Vous connaissez déjà les bases de Git. Si ce n'est pas le cas, il vous faudra réaliser l'[atelier Git](https://github.com/CraftLR/workshop-git).
 
 Cela sera indispensable pour commencer à travailler et garder trace de vos réalisation. Comme vous allez le découvrir le suivi de votre travail passe directement par GitHub grace à l'intégration continue.
 
@@ -36,9 +36,9 @@ En 2020, ses domaines de prédilection sont la programmation système, les appli
 Pour apprendre Rust, vous devez évidemment écrire et tester votre propre code Rust. Il existe deux manières simples de commencer :
 
 * [Le Playground Rust](https://play.rust-lang.org/?version=stable&mode=debug&edition=2021) : Contrairement aux développeurs JavaScript, presque tous les Rustaciens utilisent le même terrain de jeu en ligne pour tester leurs exemples. Outre les fonctionnalités essentielles que vous attendez, Rust Playground a également accès aux 100 meilleurs packages de Rust et à la prise en charge du linter Rust (`clippy`) et du formateur Rust (`rustfmt``).
-* Un éditeur de code comme VS Code. Dans VS Code, l' extension `rust-analyzer` est tout ce dont vous avez besoin pour utiliser cette intégration et écrire vos propres programmes Rust.
+* Un éditeur de code comme VS Code. Dans VS Code, l' extension `rust-analyzer` est tout ce dont vous avez besoin pour écrire vos propres programmes Rust.
 
-Pour commencer à découvrir le langage, le Playground est une bonne option car il vous permet de tester vos programmes rapidement sans vous préoccuper de l'installation d'un outil sur votre poste.
+Pour commencer à découvrir le langage, le Playground est une bonne option car il vous permet de tester vos programmes rapidement sans vous préoccuper de l'installation d'un outil sur votre poste. L'ensemble de ce workshop est réalisable sans installer d'outils sur votre poste.
 
 #### Parcours d'apprentissage Rust de Microsoft
 
@@ -60,7 +60,7 @@ Rust Cookbook : <https://rust-lang-nursery.github.io/rust-cookbook/>
 
 Pour vous rappeler des concepts principaux du langage, vous pouvez utiliser le Rust Language Cheat Sheet : <https://cheats.rs/>
 
-### Découverte et prise en main de l'IDE
+#### Installation de Rust
 
 Pour faire l'atelier, il faut disposer d'un environnement Rust complet et de préférence à jour. L'installation des outils est assez simple tant que vous êtes sous Linux ou OSX. Sous Windows, il semble que ce soit moins évident donc il faudra probablement chercher un peu plus.
 
@@ -90,26 +90,6 @@ cargo 1.72.0 (103a7ff2e 2023-08-15)
 ```
 
 Si vous disposez de docker et de Visual Studio Code, le projet peut être importé directement dans l'éditeur. Il vous sera demandé d'ouvrir le projet dans un conteneur de développement qui s'occupera d'installer toutes les dépendances nécessaires. Le téléchargement de l'image docker peut être longue si votre réseau n'a pas un débit important. Dans ce cas, il est possible de passer directement sur les IDE en ligne associé aux service GitHub CodeSpace ou Gitpod.
-
-#### Configurer Gitpod (optionnel)
-
-En cas de travail depuis une machine sur laquelle vous ne pouvez pas installer tous les outils, vous pouvez pour cet atelier utiliser le service Gitpod :
-
-[![Open In Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/CraftLR/workshop-tdd)
-
-Pour disposer de Gitpod sur tous vos projets hébergés sur Github, suivez les étapes suivantes :
-
-* Créez un compte Gitpod en vous rendant sur la page [Get started](https://www.gitpod.io/#get-started). Identifiez-vous avec votre compte github en cliquant sur le bouton "Continue with Github". Si vous avez le pack [Github Education](https://education.github.com/pack), vous pouvez bénéficier de l'offre 100h/mois. N'oubliez pas d'en faire la demande dans les [réglages de votre compte Gitpod](https://gitpod.io/plans).
-
-* Installez l'[application Gitpod](https://github.com/apps/gitpod-io/installations/new). L'application GitHub de Gitpod est similaire à un serveur CI et préparera en permanence des pré-constructions pour toutes vos branches et demandes d'extraction - vous n'avez donc pas à attendre que Maven ou NPM télécharge Internet lorsque vous souhaitez commencer à travailler.
-
-* Démarrez votre premier espace de travail avec une préconstruction en préfixant l'URL du référentiel par [https://gitpod.io#prebuild/](https://gitpod.io#prebuild/). Gitpod affiche l'état d'avancement de la pré-construction en exécutant les commandes `init` du fichier `.gitpod.yml` avant de démarrer un espace de travail. Plus tard, lorsque vous créez un nouvel espace de travail sur une branche, ou une Pull Request, l'espace de travail se charge beaucoup plus rapidement, car toutes les dépendances sont déjà téléchargées et le code est compilé.
-
-* Installez de l'extension navigateur Gitpod sur tous les navigateurs basés sur [Chromium](https://chrome.google.com/webstore/detail/gitpod-always-ready-to-co/dodmmooeoklaejobgleioelladacbeki) (tels que Microsoft Edge, Brave, Chrome, ...) ou sur [Firefox](https://addons.mozilla.org/fr/firefox/addon/gitpod/). L'extension ajoute simplement un bouton Gitpod sur chaque projet et branche sur GitHub, et Bitbucket qui préfixe l'URL avec [http://gitpod.io/#](http://gitpod.io/#) afin que vous puissiez facilement ouvrir un nouvel espace de travail à partir de n'importe quel contexte Git.
-
-* Personnalisez le thème par défaut en ouvrant le panneau de commande (avec le raccourci clavier `Ctrl+Shift+P`) et en sélectionnant `Preferences: Color Theme`. Si vous préférez par exemple les couleur sombre pour reposer vos yeux, le thème *gitpod dark* devrait vous convenir. Vous pouvez rajouter de nouveaux thème directement en recherchant dans les extensions (avec le raccourci clavier `Ctrl+Shift+X`).
-
-Vous pouvez maintenant commencer à traiter les environnements de développement comme des ressources automatisées que vous lancez lorsque vous en avez besoin et fermez (et oubliez) lorsque vous avez terminé votre tâche. Les environnements de développement deviennent totalement éphémères. Attention avec l'offre Github éducation vous ne disposez que de 100h mensuels, donc il faut penser à fermer vos espaces de travail quand vous avez terminé de vous en servir (dans tous les cas ils seront fermés automatiquement après 30 minutes d'inactivité).
 
 ### Découverte du TDD : mode opératoire (Workflow)
 
