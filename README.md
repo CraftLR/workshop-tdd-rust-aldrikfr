@@ -283,3 +283,40 @@ Après le troisième test, vous pouvez refactoriser en utilisant un `match`. Ens
 A la fin de l'implémentation de tous les symboles de base, vous pouvez refactoriser le `match` en utilisant l'IDE qui vous propose "Extract method", que vous nommerez correctement, l'idée est de toujours écrire un code facile à relire et qui exprime bien l'intention de l'auteur.
 
 Une fois l'exercice terminé, n'oubliez pas de pousser les modifications de la branche `exercice3` sur votre fork. Créez votre PR, faite la relire par votre voisin et fusionner là dès qu'elle est parfaite. Une fois la fusion effectuée, n'oubliez pas de vous replacer sur la branche `main` et de tirer votre dépôt distant.
+
+### Exercice 4 : Simulateur de robot
+
+L'installation d'essai d'une usine de robots nécessite un programme pour vérifier les mouvements du robot. Les robots ont trois mouvements possibles:
+
+* tourner à droite
+* tourner à gauche
+* avancer
+
+Les robots sont placés sur une grille hypothétique infinie, face à une direction cardinale particulière (nord, est, sud ou ouest) à des coordonnées {x, y}, par exemple, {3,8}, avec des coordonnées croissantes vers le nord et l'est.
+
+Le robot reçoit alors un certain nombre d'instructions, auquel cas l'installation de tests vérifie la nouvelle position du robot et dans quelle direction il pointe.
+
+La chaîne de caractères "RAALAL" signifie:
+
+* Tournez à droite
+* Avance deux fois
+* Tournez à gauche
+* Avance une fois
+* Tournez encore à gauche
+
+Supposons qu'un robot commence à {7, 3} face au nord. Ensuite, s'il exécute la séquence d'instructions ci-dessus il devrait se trouver aux coordonnées {9, 4} face à l'ouest.
+
+**Indications :**
+
+Pour mémoriser l'ensemble des instructions, nous ne pouvons pas connaître à l'avance le nombre d'instructions contenues dans la chaîne de commandes. Les tableaux ne sont donc pas adaptés. Nous allons utiliser les [vecteurs de Rust](https://doc.rust-lang.org/std/vec/).
+
+Nous avons tous les ingrédients pour résoudre notre problème, vous pouvez démarrer en respectant bien le workflow.
+
+**Travail à faire :**
+
+* Écrire une structure `Robot` représentant le robot à simuler.
+* Écrire une structure `RobotSimulator` qui permet de passer une chaîne d'instructions à un robot et de piloter le fonctionnement du robot en fonction d'une séquence d'instructions passées en paramètre.
+  
+Comme pour l'exercice précédent, vous devez activer les tests les uns après les autres et soumettre votre solution après chaque itération du cycle principal du workflow.
+
+Une fois l'exercice terminé, n'oubliez pas de pousser les modifications de la branche de fonctionnalité associée à l'exercice sur votre fork. Créez votre PR, faite la relire par votre voisin et fusionner là dès qu'elle est parfaite. Une fois la fusion effectuée, n'oubliez pas de vous replacer sur la branche `main` et de tirer votre dépôt distant.
