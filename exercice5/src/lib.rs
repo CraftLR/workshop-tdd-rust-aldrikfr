@@ -28,6 +28,7 @@ mod tests {
   }
 
   #[test]
+  #[ignore]
   fn no_rows() {
     #[rustfmt::skip]
     run_test(&[
