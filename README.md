@@ -250,3 +250,36 @@ cargo test -p exercice2
 Une fois l'exercice terminé, n'oubliez pas de pousser vos modifications sur votre fork. Créez votre PR, faite la relire par votre voisin et fusionner là dès qu'elle est parfaite. Une fois la fusion effectuée, n'oubliez pas de vous replacer sur la branche `main` et de tirer votre dépôt distant.
 
 Dans cet exercice, vous commencez à utiliser les `String` de Rust. Pensez bien à convertir vos littéraux avant des les utiliser et/ou les retourner.
+
+### Exercice 3 : Convertisseur de nombre romain
+
+La numération romaine est un système de numération additive utilisé par les Romains de l'Antiquité. Les chiffres romains sont représentés à l'aide de symboles combinés entre eux, notamment par les signes I, V, X, L, C, D et M, représentant respectivement les nombres 1, 5, 10, 50, 100, 500 et 1 000.
+
+Un nombre écrit en chiffres romains se lit de gauche à droite. En première approximation, sa valeur se détermine en faisant la somme des valeurs individuelles de chaque symbole, sauf quand l'un des symboles précède un symbole de valeur supérieure ; dans ce cas, on soustrait la valeur du premier symbole au deuxième.
+
+L'objectif de cet exercice est d'écrire une fonction qui prendra en paramètre un nombre romain et retournera sa représentation en une valeur entière.
+
+**Indications :**
+
+Les nombres romains sont majoritairement représentés selon les principes suivants :
+
+* Un nombre en chiffres romains se lit de gauche à droite ;
+* Un même symbole n'est pas employé quatre fois de suite (sauf M) ;
+* Tout symbole qui suit un symbole de valeur supérieure ou égale s’ajoute à celui-ci (exemple : 6 s'écrit VI) ;
+* Tout symbole qui précède un symbole de valeur supérieure se soustrait à ce dernier ;
+  * I doit être retranché à V ou à X quand I est devant V ou X (ex. : 4 s'écrit IV),
+  * X doit être retranché à L ou à C quand X est devant L ou C (ex. : 40 s'écrit XL),
+  * C doit être retranché à D ou à M quand C est devant D ou M (ex. : 900 s'écrit CM),
+  * Par contre, ôter I de L ou de C n'est pas pratiqué (49 s'écrit XLIX et non IL ; 99 s'écrit XCIX et pas IC) ;
+* Les symboles sont groupés par ordre décroissant, sauf pour les valeurs à retrancher selon la règle précédente (ex. : 1030 s'écrit MXXX et non XXXM qui est une des façons de représenter 970).
+
+Dans cet exercice, vous allez manipuler les [`String`](https://doc.rust-lang.org/std/string/struct.String.html). Les Strings possèdent de nombreuses méthodes utilitaires pour manipuler facilement les chaines de caractères. Prenez un peu de temps pour survoler la documentation avant de commencer la résolution de cet exercice.
+
+Faites très attention pour cet exercice de bien respecter le principe du TDD en ajoutant vraiment tout le temps la quantité minimale de code nécessaire à la validation des tests. Si vous suivez cette règle, il se résout très facilement alors qu'en l'abordant de manière générale, il comporte de nombreux pièges pouvant vous faire perdre un temps précieux.
+
+Comme pour l'exercice précédent, vous devez activer les tests les uns après les autres et soumettre votre solution après chaque itération du cycle principal du workflow.
+
+Après le troisième test, vous pouvez refactoriser en utilisant un switch. Ensuite, vous ajouterez les tests nécessaires pour les symboles L, C, D et M.
+A la fin de l'implémentation de tous les symboles de base, vous pouvez refactoriser le switch en utilisant l'IDE qui vous propose "Extract method", que vous nommerez correctement, l'idée est de toujours écrire un code facile à relire et qui exprime bien l'intention de l'auteur.
+
+Une fois l'exercice terminé, n'oubliez pas de pousser les modifications de la branche `exercice3` sur votre fork. Créez votre PR, faite la relire par votre voisin et fusionner là dès qu'elle est parfaite. Une fois la fusion effectuée, n'oubliez pas de vous replacer sur la branche `main` et de tirer votre dépôt distant.
